@@ -12,7 +12,8 @@ public class MainActivity extends AppCompatActivity{
 
     final Handler mHandler = new Handler();
     private Runnable mRunnable;
-    private int mInterval = 1000; // milliseconds
+    private int mInterval  = 200; // milliseconds
+    private int mInterval2 = 800; // milliseconds
     private boolean initialState = true;
 
     @Override
@@ -54,14 +55,16 @@ public class MainActivity extends AppCompatActivity{
             initialState = false;
             // Set the TextView color to red
             setContentView(R.layout.activity_main);
+            mHandler.postDelayed(mRunnable,mInterval2);
         }else {
             // Reverse the boolean
             initialState = true;
             // Change the TextView color to initial State
             setContentView(R.layout.black);
+            mHandler.postDelayed(mRunnable,mInterval);
         }
         // Schedule the task
-        mHandler.postDelayed(mRunnable,mInterval);
+
     }
 
 }
