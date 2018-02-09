@@ -8,9 +8,9 @@
     tools:layout_editor_absoluteY="81dp">
 
     <LinearLayout
-        android:layout_width="1000dp"
-        android:layout_height="1000dp"
-        android:background="#0099FF"
+        android:layout_width="467dp"
+        android:layout_height="684dp"
+        android:background="#000000"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintRight_toLeftOf="parent"
